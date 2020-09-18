@@ -8,6 +8,10 @@ public class HelloWorldBean {
 		this.message = message;
 	}
 
+	/*
+	 * Without the getter, /hello-world-bean will throw whitelabel error as 
+	 * automatic conversion fails.
+	 */
 	public String getMessage() {
 		return message;
 	}
